@@ -1,0 +1,15 @@
+
+./ebin
+	chat_otp.app app说明
+
+./src
+	chat_otp.erl API
+	chat_otp_app.erl app启动与关闭
+	chat_otp_sup.erl 监督
+	chat_otp_message.erl 消息处理与用户资料查询函数
+	chat_otp_server.erl 每个用户单独的进程相关
+
+Usage:
+	erlc -o ./ebin ./src/*.erl
+	erl -pa ./ebin
+	1> application:start(chat_otp).

@@ -1,0 +1,9 @@
+{application,chat_otp,
+             [{description,[]},
+              {vsn,"1"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {mod,{chat_otp_app,[]}},
+              {env,[]},
+              {modules,[chat_otp_app,chat_otp_message,chat_otp_server,
+                        chat_otp_sup]}]}.
